@@ -1,8 +1,12 @@
+$text-color: #ffffff;
+$nav-color: #ffcfcf;
+$font: Arial;
+
 html,
 body {
   margin: 0;
-  font-family: Arial;
-  color: #ffffff;
+  font-family: $font;
+  color: $text-color;
 }
 
 p,
@@ -22,67 +26,63 @@ ul {
 
 .container {
   min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
 
-.container .nav {
-  width: 15%;
-  min-width: 140px;
-  color: #ffcfcf;
-  padding-top: 55px;
-  padding-right: 30px;
-  text-align: center;
-}
+  .nav {
+    width: 15%;
+    min-width: 140px;
+    color: $nav-color;
+    padding-top: 55px;
+    padding-right: 30px;
+    text-align: center;
 
-.container .nav h4 {
-  -webkit-margin-before: 0;
-  margin-left: 50px;
-}
+    h4 {
+      -webkit-margin-before: 0;
+      margin-left: 50px;
+    }
+  }
 
-.container .main {
-  width: 85%;
-  min-height: 750px;
-  min-width: 600px;
-  background-color: #ffcfcf;
-}
+  .main {
+    width: 85%;
+    min-height: 750px;
+    min-width: 600px;
+    background-color: $nav-color;
 
-.container .main ul {
-  padding-left: 30px;
-}
+    ul {
+      padding-left: 30px;
+    }
 
-.container .main li {
-  font-size: 0.85rem;
-}
+    li {
+      font-size: 0.85rem;
+    }
 
-.container .main h1 {
-  font-size: 62px;
-  -webkit-margin-before: 0;
-  padding-top: 40px;
-  padding-left: 30px;
-}
+    h1 {
+      font-size: 62px;
+      -webkit-margin-before: 0;
+      padding-top: 40px;
+      padding-left: 30px;
+    }
 
-.container .main video {
-  padding-left: 30px;
-}
+    video {
+      padding-left: 30px;
+    }
 
-.container .main p {
-  padding-left: 30px;
-  width: 55%;
-  min-width: 550px;
-}
+    p {
+      padding-left: 30px;
+      width: 55%;
+      min-width: 550px;
+    }
 
-.container .main a {
-  color: inherit;
-  padding-left: 30px;
-  text-decoration: none;
+    a {
+      color: inherit;
+      padding-left: 30px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
-
-.container .main a:hover {
-  text-decoration: underline;
-}
-
 /*
 .container {
   min-height: 100%;
@@ -145,4 +145,3 @@ ul {
   text-decoration: underline;
 }
 */
-/*# sourceMappingURL=style.css.map */
